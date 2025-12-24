@@ -1,0 +1,53 @@
+body {
+    background: #222;
+    font-family: Arial;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.player {
+    background: #333;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#artist {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 4px;
+    text-decoration: none; 
+    border: none;            
+}
+
+.controls button {
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 5px;
+}
+li:hover {
+    background: #444;
+}

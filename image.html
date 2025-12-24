@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+
+    <h1>Image Gallery</h1>
+
+
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+    </div>
+
+
+    <div class="gallery">
+        <img src="https://picsum.photos/id/10/200/300" class="nature" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/214/200/300" class="city" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/28/200/300" class="nature" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/299/200/300" class="city" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/17/200/300" class="nature" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/283/200/300" class="city" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/28/200/300" class="nature" onclick="openLightbox(this)">
+        <img src="https://picsum.photos/id/283/200/300" class="city" onclick="openLightbox(this)">
+    </div>
+
+
+    </div>
+
+
+    <div id="lightbox">
+        <span class="close" onclick="closeLightbox()">✖</span>
+        <img id="lightbox-img">
+        <div class="nav">
+            <button onclick="prevImg()">⏮</button>
+            <button onclick="nextImg()">⏭</button>
+        </div>
+    </div>
+
+    <script src="image.js"></script>
+</body>
+
+</html>
